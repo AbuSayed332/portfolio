@@ -38,7 +38,7 @@ const SocialLinks = () => {
           Resume <MdFileDownload size={30} />
         </>
       ),
-      href: "/public/resume.pdf",
+      href: "/resume.pdf",
       style: "rounded-br-md",
       download: true,
     },
