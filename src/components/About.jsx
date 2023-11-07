@@ -11,21 +11,21 @@ const About = () => {
           </p>
         </div>
         <p className=" text-xl mt-20">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius pariatur
-          nobis saepe earum similique praesentium deleniti! Dolor vel minus
-          deserunt nisi aspernatur consectetur sunt, inventore quam delectus non
-          id fugit ipsa accusamus corrupti quis suscipit necessitatibus pariatur
-          commodi ut praesentium doloribus velit. Fugiat dolores in ducimus quod
-          quia illum sed!
+          To secure a challenging position as a front-end developer in a dynamic
+          and innovative company where I can leverage my expertise in React and
+          Redux to develop high-quality web applications. With a keen eye for
+          design and a passion for clean code, I am committed to creating
+          engaging and responsive user interfaces that deliver an exceptional
+          user experience. My goal is to work collaboratively with a team of
+          like-minded professionals to solve complex problems and drive business
+          growth through innovative digital solutions.
         </p>
         <br />
         <p className="text-xl">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. At ea odit
-          porro eum exercitationem asperiores quaerat nesciunt doloribus?
-          Similique, fuga. Laborum libero doloremque, voluptas cum, nulla
-          quisquam sit animi necessitatibus, odit quasi similique? Ad hic
-          consequatur, voluptas repudiandae repellendus atque et, unde quaerat
-          animi quibusdam sit omnis exercitationem! Minus, vel?
+          Some responsibilities of a Java Developer include designing, planning,
+          developing, and managing Java-based software and applications. Java
+          Developers work on collaborating with other software engineers in the
+          team to integrate Java into the website.
         </p>
       </div>
     </div>
