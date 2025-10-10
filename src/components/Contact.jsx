@@ -79,7 +79,7 @@ const Contact = () => {
         </svg>
       ),
       title: "Email",
-      value: "abusayed@example.com",
+      value: "engineerabusayed1@gmail.com",
       gradient: "from-cyan-500 to-blue-500"
     },
     {
@@ -89,7 +89,7 @@ const Contact = () => {
         </svg>
       ),
       title: "Phone",
-      value: "+880 123 456 7890",
+      value: "+880 161 701 6002",
       gradient: "from-blue-500 to-purple-500"
     },
     {
@@ -275,7 +275,7 @@ const Contact = () => {
             <p className="text-gray-300 mb-4">
               Prefer email? Drop me a line directly at{' '}
               <a href="mailto:abusayed@example.com" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors duration-300">
-                abusayed@example.com
+                engineerabusayed1@gmail.com
               </a>
             </p>
             <p className="text-sm text-gray-500">Usually respond within 24 hours</p>
