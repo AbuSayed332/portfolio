@@ -22,4 +22,5 @@ Dynamic Sections:
 
 
 🚀 Live Demo
-View Live Demo <!-- Add your deployed link here -->
+View Live Demo
+https://portfolio-gamma-ten-mlsdc3s7bm.vercel.app/
