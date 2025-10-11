@@ -248,15 +248,17 @@ const Contact = () => {
                 </div>
 
                 {/* Note about form */}
-                <div className="bg-cyan-500/10 border border-cyan-500/30 rounded-lg p-4">
+                {/* <div className="bg-cyan-500/10 border border-cyan-500/30 rounded-lg p-4">
                   <p className="text-sm text-cyan-300">
                     <span className="font-semibold">Note:</span> To enable form submission, wrap these inputs in a form tag with action="https://getform.io/f/3fac442c-a92f-4075-bb0c-b0974116fb00" and method="POST"
                   </p>
-                </div>
+                </div> */}
 
                 {/* Submit Button */}
                 <button
                   type="button"
+                  formAction='https://getform.io/f/3fac442c-a92f-4075-bb0c-b0974116fb00'
+                  formMethod='POST'
                   className="w-full px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:scale-[1.02] hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 flex items-center justify-center gap-2 group"
                 >
                   <span>Send Message</span>

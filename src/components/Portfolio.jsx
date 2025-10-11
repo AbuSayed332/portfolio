@@ -97,10 +97,12 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "Array Destructuring App",
+      title: "Portfolio App",
       category: "JavaScript",
       description: "Modern ES6+ features demonstration",
       tech: ["React", "JavaScript", "Tailwind"],
+      src: "/125.png",
+      link: "https://portfolio-gamma-ten-mlsdc3s7bm.vercel.app/"
     },
     {
       id: 2,
@@ -108,6 +110,8 @@ const Portfolio = () => {
       category: "Tutorial",
       description: "Complete setup documentation",
       tech: ["Node.js", "NPM", "Guide"],
+      src: "/arrayDestruct.png",
+      link: "https://souravalam.netlify.app/"
     },
     {
       id: 3,
@@ -115,27 +119,36 @@ const Portfolio = () => {
       category: "Component",
       description: "Mobile-first navigation system",
       tech: ["React", "CSS", "Responsive"],
+      src: "/navbar.png",
+      link: "https://customer-support-system-5mpt.vercel.app/"
     },
     {
       id: 4,
-      title: "React Parallax",
+      title: "My Engineering Blog",
       category: "Animation",
       description: "Smooth scrolling effects",
       tech: ["React", "GSAP", "Animation"],
+      src: "/engir.png",
+      link: "https://engineerabusayed.netlify.app/"
     },
     {
       id: 5,
-      title: "Smooth Scroll",
+      title: "Product Store App",
       category: "Feature",
       description: "Enhanced user experience",
       tech: ["React", "JavaScript", "UX"],
+      src: "/productStore.png",
+       link: "https://mern-stack-69d7.onrender.com/"
+
     },
     {
       id: 6,
-      title: "Weather Application",
+      title: "Customer Support Bot",
       category: "API Project",
       description: "Real-time weather data",
       tech: ["React", "API", "TypeScript"],
+      src: "/installNode.png",
+      link: "https://customer-support-system-5mpt.vercel.app/"
     },
   ];
 
@@ -183,11 +196,12 @@ const Portfolio = () => {
                 {/* Image Container */}
                 <div className="relative h-64 bg-gradient-to-br from-slate-700 to-slate-800 overflow-hidden">
                   {/* Placeholder for image */}
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-cyan-500/20 to-blue-500/20">
+                  <img src={project.src} alt={project.title} className="absolute inset-0 w-full h-full object-cover" />
+                  {/* <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-cyan-500/20 to-blue-500/20">
                     <svg className="w-20 h-20 text-cyan-400/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                     </svg>
-                  </div>
+                  </div> */}
 
                   {/* Overlay on hover */}
                   <div className={`absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent transition-opacity duration-500 ${
@@ -237,12 +251,12 @@ const Portfolio = () => {
 
                   {/* Buttons */}
                   <div className="flex gap-3">
-                    <button className="flex-1 px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 group/btn">
+                    <a href={project.link} target='_blank' className="flex-1 px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 group/btn">
                       <span>Demo</span>
                       <svg className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                       </svg>
-                    </button>
+                    </a>
                     <button className="flex-1 px-4 py-2 rounded-lg border-2 border-gray-700 text-white font-semibold hover:border-cyan-500 hover:bg-cyan-500/10 transition-all duration-300 flex items-center justify-center gap-2 group/btn">
                       <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                         <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z" clipRule="evenodd" />

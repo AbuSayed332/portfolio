@@ -108,7 +108,7 @@ const Home = () => {
           <h1 className="text-5xl sm:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
             <span className="text-white">I'm a </span>
             <span className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent animate-gradient">
-              Full Stack 
+              Web 
             </span>
             <br />
             <span className="text-white">Developer</span>
@@ -136,9 +136,9 @@ const Home = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </Link>
 
-            <button className="px-8 py-4 rounded-xl border-2 border-gray-700 text-white font-semibold hover:border-cyan-500 hover:bg-cyan-500/10 transition-all duration-300">
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="px-8 py-4 rounded-xl border-2 border-gray-700 text-white font-semibold hover:border-cyan-500 hover:bg-cyan-500/10 transition-all duration-300">
               Download CV
-            </button>
+            </a>
           </div>
 
           {/* Stats */}
@@ -168,14 +168,14 @@ const Home = () => {
             <div className="relative rounded-2xl overflow-hidden border border-gray-800 backdrop-blur-sm">
               <div className="aspect-square bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center">
                 {/* Placeholder - replace with your actual image */}
-               
-                <div className="w-full h-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 flex items-center justify-center">
-                     <img src={heroImage} alt="my logo" className="w-full h-full object-cover" />
+               <img src={heroImage} alt="my logo" className="w-full h-full object-cover" />
+                {/* <div className="w-full h-full bg-gradient-to-br from-cyan-500/20 to-blue-500/20 flex items-center justify-center">
+                     
                   <svg className="w-32 h-32 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                   
-                </div>
+                </div> */}
               </div>
               
               {/* Overlay on hover */}
