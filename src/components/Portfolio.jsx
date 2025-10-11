@@ -97,17 +97,17 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "Portfolio App",
+      title: "Courier Service App",
       category: "JavaScript",
       description: "Modern ES6+ features demonstration",
       tech: ["React", "JavaScript", "Tailwind"],
-      src: "/125.png",
-      link: "https://portfolio-gamma-ten-mlsdc3s7bm.vercel.app/"
+      src: "/courier.png",
+      link: "https://courier-frontend-gamma.vercel.app/"
     },
     {
       id: 2,
-      title: "Node Installation Guide",
-      category: "Tutorial",
+      title: "Personal Portfolio",
+      category: "MERN Stack",
       description: "Complete setup documentation",
       tech: ["Node.js", "NPM", "Guide"],
       src: "/arrayDestruct.png",
@@ -115,12 +115,12 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      title: "Responsive Navbar",
+      title: "Tutor Finder App",
       category: "Component",
       description: "Mobile-first navigation system",
       tech: ["React", "CSS", "Responsive"],
-      src: "/navbar.png",
-      link: "https://customer-support-system-5mpt.vercel.app/"
+      src: "/tutordemo.png",
+      link: "https://tutordemo.netlify.app/"
     },
     {
       id: 4,
@@ -145,7 +145,7 @@ const Portfolio = () => {
       id: 6,
       title: "Customer Support Bot",
       category: "API Project",
-      description: "Real-time weather data",
+      description: "Real-time chat application",
       tech: ["React", "API", "TypeScript"],
       src: "/installNode.png",
       link: "https://customer-support-system-5mpt.vercel.app/"
