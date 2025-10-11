@@ -112,7 +112,7 @@ const About = () => {
               <div className="absolute -bottom-3 -right-3 w-6 h-6 border-b-2 border-r-2 border-cyan-400 rounded-br-lg"></div>
               
               <p className="text-gray-300 text-lg leading-relaxed">
-                I'm a passionate <span className="text-cyan-400 font-semibold">front-end developer</span> specializing in building exceptional digital experiences. With expertise in <span className="text-blue-400 font-semibold">React and Redux</span>, I create high-quality web applications that combine beautiful design with clean, maintainable code.
+                I'm a passionate <span className="text-cyan-400 font-semibold">full-stack developer</span> specializing in building exceptional digital experiences. With expertise in <span className="text-blue-400 font-semibold">React and Redux</span>, I create high-quality web applications that combine beautiful design with clean, maintainable code.
               </p>
             </div>
 
