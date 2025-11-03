@@ -1,52 +1,3 @@
-// const Contact = () => {
-//   return (
-//     <div
-//       name="contact"
-//       className="w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white  "
-//     >
-//       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
-//         <div className="pd-8">
-//           <p className="text-4xl font-bold inline border-b-4 border-gray-500 ">
-//             Contact
-//           </p>
-//           <p className="py-6">Submit the form below to get in touch with me</p>
-//         </div>
-//         <div className="flex justify-center items-center">
-//           <form
-//             action="https://getform.io/f/3fac442c-a92f-4075-bb0c-b0974116fb00"
-//             method="POST"
-//             className=" flex flex-col w-full md:w-1/2"
-//           >
-//             <input
-//               type="text"
-//               name="name"
-//               placeholder="Enter your name"
-//               className=" p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-//             />
-//             <input
-//               type="text"
-//               name="email"
-//               placeholder="Enter your Email"
-//               className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-//             />
-//             <textarea
-//               name="message"
-//               rows="10"
-//               placeholder="Type your message"
-//               className=" p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
-//             ></textarea>
-//             <button className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
-//               Submit
-//             </button>
-//           </form>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Contact;
-
 import { useState, useEffect } from 'react';
 
 const Contact = () => {
@@ -189,7 +140,11 @@ const Contact = () => {
               <div className="absolute -top-3 -right-3 w-6 h-6 border-t-2 border-r-2 border-cyan-400 rounded-tr-lg"></div>
               <div className="absolute -bottom-3 -left-3 w-6 h-6 border-b-2 border-l-2 border-cyan-400 rounded-bl-lg"></div>
 
-              <div className="space-y-6">
+              <form 
+                action="https://getform.io/f/3fac442c-a92f-4075-bb0c-b0974116fb00" 
+                method="POST"
+                className="space-y-6"
+              >
                 {/* Name Field */}
                 <div className="relative">
                   <label className="block text-sm font-medium text-gray-300 mb-2">
@@ -199,6 +154,7 @@ const Contact = () => {
                     type="text"
                     name="name"
                     placeholder="John Doe"
+                    required
                     onFocus={() => setFocusedField('name')}
                     onBlur={() => setFocusedField(null)}
                     className={`w-full p-4 bg-slate-700/50 border-2 rounded-xl text-white placeholder-gray-500 focus:outline-none transition-all duration-300 ${
@@ -218,6 +174,7 @@ const Contact = () => {
                     type="email"
                     name="email"
                     placeholder="john@example.com"
+                    required
                     onFocus={() => setFocusedField('email')}
                     onBlur={() => setFocusedField(null)}
                     className={`w-full p-4 bg-slate-700/50 border-2 rounded-xl text-white placeholder-gray-500 focus:outline-none transition-all duration-300 ${
@@ -237,6 +194,7 @@ const Contact = () => {
                     name="message"
                     rows={6}
                     placeholder="Tell me about your project..."
+                    required
                     onFocus={() => setFocusedField('message')}
                     onBlur={() => setFocusedField(null)}
                     className={`w-full p-4 bg-slate-700/50 border-2 rounded-xl text-white placeholder-gray-500 focus:outline-none resize-none transition-all duration-300 ${
@@ -247,18 +205,9 @@ const Contact = () => {
                   />
                 </div>
 
-                {/* Note about form */}
-                {/* <div className="bg-cyan-500/10 border border-cyan-500/30 rounded-lg p-4">
-                  <p className="text-sm text-cyan-300">
-                    <span className="font-semibold">Note:</span> To enable form submission, wrap these inputs in a form tag with action="https://getform.io/f/3fac442c-a92f-4075-bb0c-b0974116fb00" and method="POST"
-                  </p>
-                </div> */}
-
                 {/* Submit Button */}
                 <button
-                  type="button"
-                  formAction='https://getform.io/f/3fac442c-a92f-4075-bb0c-b0974116fb00'
-                  formMethod='POST'
+                  type="submit"
                   className="w-full px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:scale-[1.02] hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 flex items-center justify-center gap-2 group"
                 >
                   <span>Send Message</span>
@@ -266,7 +215,7 @@ const Contact = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </button>
-              </div>
+              </form>
             </div>
           </div>
         </div>
@@ -276,7 +225,7 @@ const Contact = () => {
           <div className="inline-block p-6 rounded-2xl bg-gradient-to-r from-cyan-500/10 to-blue-500/10 border border-cyan-500/20 backdrop-blur-sm">
             <p className="text-gray-300 mb-4">
               Prefer email? Drop me a line directly at{' '}
-              <a href="mailto:abusayed@example.com" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors duration-300">
+              <a href="mailto:engineerabusayed1@gmail.com" className="text-cyan-400 font-semibold hover:text-cyan-300 transition-colors duration-300">
                 engineerabusayed1@gmail.com
               </a>
             </p>

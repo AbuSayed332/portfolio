@@ -1,77 +1,3 @@
-// import { useState } from "react";
-// import { FaBars, FaTimes } from "react-icons/fa";
-// import { Link } from "react-scroll";
-// const NavBar = () => {
-//   const [nav, setNav] = useState(false);
-//   const links = [
-//     {
-//       id: 1,
-//       link: "home",
-//     },
-//     {
-//       id: 2,
-//       link: "about",
-//     },
-//     {
-//       id: 3,
-//       link: "portfolio",
-//     },
-//     {
-//       id: 4,
-//       link: "experience",
-//     },
-//     {
-//       id: 5,
-//       link: "contact",
-//     },
-//   ];
-//   return (
-//     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
-//       <div className="font-signature text-5xl ml-2 "> Abu Sayed </div>
-//       <ul className="hidden md:flex">
-//         {links.map(({ id, link }) => (
-//           <li
-//             key={id}
-//             className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
-//           >
-//             <Link to={link} smooth duration={500}>
-//               {link}
-//             </Link>
-//           </li>
-//         ))}
-//       </ul>
-//       <div
-//         onClick={() => setNav(!nav)}
-//         className=" cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
-//       >
-//         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
-//       </div>
-//       {nav && (
-//         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-amber-500 to-orange-500 text-yellow-100 ">
-//           {links.map(({ id, link }) => (
-//             <li
-//               key={id}
-//               className=" px-4 cursor-pointer capitalize py-6 text-4xl"
-//             >
-//               <Link
-//                 onClick={() => setNav(!nav)}
-//                 to={link}
-//                 smooth
-//                 duration={500}
-//               >
-//                 {link}
-//               </Link>
-//             </li>
-//           ))}
-//         </ul>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default NavBar;
-
-
 import { useState, useEffect } from "react";
 
 const NavBar = () => {
@@ -100,6 +26,21 @@ const NavBar = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
     setNav(false);
+  };
+
+  // Handle Hire Me button click
+  const handleHireMe = () => {
+    // Option 1: Scroll to contact section
+    scrollToSection('contact');
+    
+    // Option 2: Open email client (uncomment to use)
+    window.location.href = 'mailto:engineerabusayed1@gmail.com?subject=Hire%20Inquiry&body=Hello%2C%20I%20would%20like%20to%20discuss%20a%20project%20with%20you.';
+    
+    // Option 3: Open WhatsApp (uncomment to use)
+    // window.open('https://wa.me/8801617016002?text=Hello%2C%20I%20would%20like%20to%20hire%20you', '_blank');
+    
+    // Option 4: Download resume (uncomment to use)
+    // window.open('/path-to-your-resume.pdf', '_blank');
   };
 
   return (
@@ -131,7 +72,10 @@ const NavBar = () => {
             </li>
           ))}
           <li>
-            <button className="ml-4 px-6 py-2.5 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300">
+            <button 
+              onClick={handleHireMe}
+              className="ml-4 px-6 py-2.5 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
+            >
               Hire Me
             </button>
           </li>
@@ -187,7 +131,10 @@ const NavBar = () => {
             }`}
             style={{ transitionDelay: nav ? `${links.length * 100}ms` : '0ms' }}
           >
-            <button className="px-10 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-xl font-bold hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300">
+            <button 
+              onClick={handleHireMe}
+              className="px-10 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-xl font-bold hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
+            >
               Hire Me
             </button>
           </li>
