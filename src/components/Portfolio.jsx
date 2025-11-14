@@ -1,74 +1,4 @@
-// import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-// import installNode from "../assets/portfolio/installNode.jpg";
-// import navbar from "../assets/portfolio/navbar.jpg";
-// import reactParallax from "../assets/portfolio/reactParallax.jpg";
-// import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
-// import reactWather from "../assets/portfolio/reactWeather.jpg";
-// const Portfolio = () => {
-//   const profile = [
-//     {
-//       id: 1,
-//       src: arrayDestruct,
-//     },
-//     {
-//       id: 2,
-//       src: installNode,
-//     },
-//     {
-//       id: 3,
-//       src: navbar,
-//     },
-//     {
-//       id: 4,
-//       src: reactParallax,
-//     },
-//     {
-//       id: 5,
-//       src: reactSmooth,
-//     },
-//     {
-//       id: 6,
-//       src: reactWather,
-//     },
-//   ];
-//   return (
-//     <div
-//       name="portfolio"
-//       className=" bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen"
-//     >
-//       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-//         <div className="pb-8">
-//           <p className=" text-4xl font-bold inline border-b-4 border-gray-500">
-//             Portfolio
-//           </p>
-//           <p className="py-6">Check out some of my work right here </p>
-//         </div>
 
-//         <div className=" grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-//           {profile.map(({ id, src }) => (
-//             <div key={id} className="shadow-md shadow-gray-500 rounded-lg">
-//               <img
-//                 src={src}
-//                 alt=""
-//                 className=" rounded-md hover:scale-105 duration-200"
-//               />
-//               <div className="flex items-center justify-center">
-//                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-//                   Demo
-//                 </button>
-//                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-//                   Code
-//                 </button>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Portfolio;
 
 import { useState, useEffect } from 'react';
 
@@ -97,24 +27,34 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "Courier Service App",
-      category: "JavaScript",
-      description: "Modern ES6+ features demonstration",
-      tech: ["React", "JavaScript", "Tailwind"],
-      src: "/courier.png",
-      link: "https://courier-frontend-gamma.vercel.app/"
+      title: "Customer Support Bot",
+      category: "API Project",
+      description: "Real-time chat application",
+      tech: ["React", "API", "TypeScript"],
+      src: "/installNode.png",
+      link: "https://customer-support-system-5mpt.vercel.app/"
     },
     {
       id: 2,
-      title: "Personal Portfolio",
+      title: "Fullstack-ecommerce App",
       category: "MERN Stack",
       description: "Complete setup documentation",
-      tech: ["Node.js", "NPM", "Guide"],
-      src: "/arrayDestruct.png",
-      link: "https://souravalam.netlify.app/"
+      tech: ["Node.js", "Mongodb", "React","Sass", "Express", "Redux"],
+      src: "/Full-Stack.png",
+      link: "https://fullstack-ecommerce.netlify.app/"
     },
     {
       id: 3,
+        title: "Product Store App",
+      category: "Feature",
+      description: "Enhanced user experience",
+      tech: ["React", "JavaScript", "UX"],
+      src: "/productStore.png",
+       link: "https://mern-stack-69d7.onrender.com/"
+      
+    },
+    {
+      id: 4,
       title: "Tutor Finder App",
       category: "Component",
       description: "Mobile-first navigation system",
@@ -123,32 +63,23 @@ const Portfolio = () => {
       link: "https://tutordemo.netlify.app/"
     },
     {
-      id: 4,
-      title: "My Engineering Blog",
+      id: 5,
+      title: "Bloging Platform app",
       category: "Animation",
       description: "Smooth scrolling effects",
       tech: ["React", "GSAP", "Animation"],
       src: "/engir.png",
       link: "https://engineerabusayed.netlify.app/"
-    },
-    {
-      id: 5,
-      title: "Product Store App",
-      category: "Feature",
-      description: "Enhanced user experience",
-      tech: ["React", "JavaScript", "UX"],
-      src: "/productStore.png",
-       link: "https://mern-stack-69d7.onrender.com/"
 
     },
     {
       id: 6,
-      title: "Customer Support Bot",
-      category: "API Project",
-      description: "Real-time chat application",
-      tech: ["React", "API", "TypeScript"],
-      src: "/installNode.png",
-      link: "https://customer-support-system-5mpt.vercel.app/"
+      title: "Courier Service App",
+      category: "JavaScript",
+      description: "Modern ES6+ features demonstration",
+      tech: ["React", "JavaScript", "Tailwind"],
+      src: "/courier.png",
+      link: "https://courier-frontend-gamma.vercel.app/"
     },
   ];
 
